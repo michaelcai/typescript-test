@@ -11,13 +11,15 @@
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
     "typedef": [true, "call-signature"],
+    "no-string-throw": false,
 
     // Immutability rules
     "readonly-keyword": true,
-    "readonly-array": true,
-    "no-let": true,
+    "readonly-array": false,
+    "no-let": false,
     "no-object-mutation": true,
     "no-delete": true,
+    "no-bitwise": false,
     "no-method-signature": true,
 
     // Functional style rules
@@ -25,10 +27,10 @@
     "no-class": true,
     "no-mixed-interface": true,
     "no-expression-statement": [
-      true,
+      false,
       { "ignore-prefix": ["console.", "process.exit"] }
     ],
-    "no-if-statement": true
+    "no-if-statement": false
     /* end tslint-immutable rules */
   }
 }
